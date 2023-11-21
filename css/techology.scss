@@ -1,0 +1,393 @@
+@import "var.scss";
+.techology {
+}
+.techology_wrap {
+}
+.techology_header{
+	margin-bottom: 48px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+@media (max-width:575px){
+	.techology_header{
+		align-items: flex-start;
+	}
+}
+.techology_header_text{
+	flex: 0 1 935px;
+	margin-right: 20px;
+}
+.techology_title {
+	margin-bottom: 16px;
+}
+@media (max-width:575px) {
+	.techology_title{
+		margin-bottom: 8px;
+	}
+}
+.techology_subtitle {
+	p{
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
+	}
+}
+@media (max-width:991px) {
+	.techology_subtitle{
+		p{
+			font-size: 20px;
+			line-height: 1.2;
+		}
+	}
+}
+@media (max-width:575px) {
+	.techology_subtitle{
+		p{
+			font-size: 14px;
+		}
+	}
+}
+.techology_header_pic{
+	flex: 0 0 145px;
+	height: 135px;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+@media (max-width:991px){
+	.techology_header_pic{
+		flex: 0 0 112px;
+		height: 104px;
+	}
+}
+@media (max-width:575px){
+	.techology_header_pic{
+		flex: 0 0 60px;
+		height: 57px;
+	}
+}
+.techology_tabs {
+	margin-bottom: 64px;
+}
+@media (max-width:991px) {
+	.techology_tabs{
+		margin-bottom: 40px; 
+	}
+}
+@media (max-width:575px) {
+	.techology_tabs{
+		margin-bottom: 32px; 
+	}
+}
+.techology_tabs_headers {
+	margin-bottom: 24px;
+	overflow: auto;
+	scrollbar-width: none;
+	&::-webkit-scrollbar{
+		width: 0;
+		height: 0;
+	}
+}
+.techology_tabs_headers_wrap{
+	display: flex;
+	width: 1290px;
+}
+.techology_tabs_headers_item {
+	margin-right: 8px;
+	padding: 10px 24px;
+	border-radius: 40px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 18px;
+	transition: 0.3s;
+	cursor: pointer;
+	&:last-child{
+		margin: 0;
+	}
+	&.active{
+		color: $w;
+		background-color: $gr;
+	}
+}
+.techology_tabs_contemt {
+	border-radius: 24px;
+	position: relative;
+	overflow: hidden;
+}
+.techology_tabs_contemt_item {
+	transition: 0.3s;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	z-index: -1;
+	display: flex;
+	&.active{
+		position: relative;
+		opacity: 1;
+		visibility: visible;
+		z-index: 0;
+	}
+}
+@media (max-width:767px) {
+	.techology_tabs_contemt_item{
+		display: block;
+	}
+}
+.techology_tabs_contemt_item_pic {
+	flex: 0 1 917px;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.techology_tabs_contemt_item_text {
+	flex: 0 0 523px;
+	background-color: $pi;
+	padding: 64px;
+}
+@media (max-width:991px) {
+	.techology_tabs_contemt_item_text{
+		flex: 0 0 417px;
+		padding: 44px 40px;
+	}
+}
+.techology_tabs_contemt_item_paragraph {
+	margin-bottom: 55px;
+	&:last-child{
+		margin: 0;
+	}
+}
+@media (max-width:991px){
+	.techology_tabs_contemt_item_paragraph{
+		margin-bottom: 24px;
+	}
+}
+@media (max-width:767px){
+	.techology_tabs_contemt_item_paragraph{
+		margin-bottom: 40px;
+	}
+}
+@media (max-width:575px){
+	.techology_tabs_contemt_item_paragraph{
+		margin-bottom: 18px;
+	}
+}
+.techology_tabs_contemt_item_name {
+	margin-bottom: 4px;
+	p{
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 24px;
+		color:#666666;
+	}
+}
+@media (max-width:575px) {
+	.techology_tabs_contemt_item_name{
+		p{
+			font-size: 12px;
+			line-height: 1.2;
+		}
+	}
+}
+.techology_tabs_contemt_item_title {
+	margin-bottom: 8px;
+	p{
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 24px;
+	}
+}
+@media (max-width:575px) {
+	.techology_tabs_contemt_item_title{
+		p{
+			font-size: 16px;
+		}
+	}
+}
+.techology_tabs_contemt_item_list {
+	padding-left: 20px;
+	li{
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+		list-style-type: disc;
+		&:last-child{
+			margin: 0;
+		}
+	}
+}
+@media (max-width:575px) {
+	.techology_tabs_contemt_item_list{
+		li{
+			font-size: 14px;
+		line-height: 1.2;
+		}
+	}
+}
+.techology_row {
+	margin-bottom: 120px;
+}
+@media (max-width:1200px) {
+	.techology_row{
+		margin-bottom: 100px;
+	}
+}
+@media (max-width:991px) {
+	.techology_row{
+		margin-bottom: 60px;
+	}
+}
+@media (max-width:575px) {
+	.techology_row{
+		margin-bottom: 40px; 
+	}
+}
+.row_tri {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 75px;
+}
+@media (max-width:991px) {
+	.row_tri{
+		grid-template-columns: repeat(1, 1fr);
+		gap: 48px;
+	}
+}
+@media (max-width:575px) {
+	.row_tri{
+		gap: 32  px;
+	}
+}
+.row_tri_item {
+	display: flex;
+}
+.row_tri_item_pic {
+	flex: 0 0 48px;
+	margin-right: 32px;
+	img{
+		width: 100%; 
+	}
+}
+@media (max-width:1200px) {
+	.row_tri_item_pic{
+		margin-right: 16px;
+	}
+}
+@media (max-width:767px) {
+	.row_tri_item_pic{
+		flex: 0 0 40px;
+		margin-right: 14px;
+	}
+}
+@media (max-width:575px) {
+	.row_tri_item_pic{
+		flex: 0 0 32px;
+		margin-right: 16px;
+	}
+}
+.row_tri_item_content {
+}
+.row_tri_item_content_header {
+	margin-bottom: 12px;
+	p{
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 32px;
+		color: $or;
+	}
+}
+@media (max-width:1200px) {
+	.row_tri_item_content_header{
+		p{
+			font-size: 24px;
+			line-height: 1;
+		}
+	}
+}
+.row_tri_item_content_text {
+	p{
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+}
+@media (max-width:575px) {
+	.row_tri_item_content_text{
+		p{
+			font-size: 14px;
+			line-height: 1.2;
+		}
+	}
+}
+.techology_care {
+	background-color: $gr;
+	border-radius: 24px;
+	padding: 65px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+@media (max-width:991px) {
+	.techology_care{
+		padding: 32px 20px;
+	}
+}
+.techology_care_pic {
+	width: 48px;
+	height: 48px;
+	margin-bottom: 24px;
+	img{
+		width: 100%;
+		height: 100%;
+	}
+}
+@media (max-width:575px) {
+	.techology_care_pic{
+		margin-bottom: 14px;
+	}
+}
+.techology_care_title {
+	margin-bottom: 16px;
+	p{
+		font-size: 32px;
+		font-weight: 500;
+		line-height: 32px;
+		color: $w;
+		text-align: center;
+	}
+}
+@media (max-width:991px) {
+	.techology_care_title{
+		margin-bottom: 8px;
+		p{
+			font-size: 24px;
+			line-height: 1;
+		}
+	}
+}
+.techology_care_text {
+	max-width: 833px;
+	width: 100%;
+	p{
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 32px;
+		color: $w;
+		text-align: center;
+	}
+}
+@media (max-width:991px) {
+	.techology_care_text{
+		max-width: 560px;
+		p{
+			font-size: 16px;
+			line-height: 1.2;
+		}
+	}
+}

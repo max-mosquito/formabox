@@ -1,0 +1,148 @@
+@import "var.scss";
+.news {
+}
+.news_wrap {
+}
+.news_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 32px;
+}
+.news_title {
+}
+.news_allNews {
+	a{
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 16px;
+		color: $gr;
+	}
+}
+.news_row {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px; 
+}
+@media (max-width:1200px){
+	.news_row{
+		grid-template-columns: repeat(1, 1fr);
+		gap: 48px; 
+	}
+}
+.news_card {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+@media (max-width:1200px) {
+	.news_card{
+		flex-direction: row;
+	}
+}
+@media (max-width:767px) {
+	.news_card{
+		flex-direction: column;
+	}
+}
+.news_card_pic {
+	overflow: hidden;
+	border-radius: 24px;
+	margin-bottom: 32px;
+	img{
+		width: 100%;
+	}
+}
+@media (max-width:1200px) {
+	.news_card_pic{
+		margin-bottom: 0;
+		flex: 0 0 320px;
+		margin-right: 32px;
+	}
+}
+@media (max-width:991px) {
+	.news_card_pic{
+		margin-bottom: 0;
+		flex: 0 0 275px;
+		margin-right: 24px;
+	}
+}
+@media (max-width:767px){
+	.news_card_pic{
+		margin-right: 0;
+		margin-bottom: 32px;
+		flex: auto;
+		width: 100%;
+	}
+}
+@media (max-width:575px){
+	.news_card_pic{
+		margin-right: 0;
+		margin-bottom: 16px;
+	}
+}
+.news_card_content{
+	max-width: 400px;
+	width: 100%;
+}
+@media (max-width:1200px){
+	.news_card_content{
+		max-width: none;
+	}
+}
+.news_card_date {
+	margin-bottom: 8px;
+	p{
+		font-size: 14px;
+		font-weight: 400;
+		line-height: 20px;
+		color: #666666;
+	}
+}
+@media (max-width:575px) {
+	.news_card_date{
+		margin-bottom: 4px;
+	}
+}
+.news_card_title {
+	margin-bottom: 8px;
+	p{
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 32px;
+	}
+}
+@media (max-width:991px) {
+	.news_card_title{
+		p{
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 24px;
+		}
+	}
+}
+@media (max-width:575px) {
+	.news_card_title{
+		margin-bottom: 4px;
+		p{
+			font-size: 16px;
+			font-weight: 500;
+			line-height: 24px;
+		}
+	}
+}
+.news_card_text {
+	p{
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 24px;
+	}
+}
+@media (max-width:575px) {
+	.news_card_text{
+		p{
+			font-size: 14px;
+			line-height: 20px;
+		}
+	}
+}

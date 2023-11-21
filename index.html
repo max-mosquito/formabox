@@ -52,10 +52,14 @@
                   <div class="header_top_info_header_message hover">
                      <p id="messageBtn">Оставить сообщение</p>
                   </div>
-                  <div class="header_top_info_header_search hover">
+                  <div class="header_top_info_header_search">
                      <p id="searchBtn">Поиск</p>
+                     <form class="pc_form-search" id="pc_form-search">
+                        <input type="text" name="pc_form-search-inp" class="pc_form-search-inp" id="pc_form-search-inp">
+                        <button class="pc_form-search-btn" id="pc_form-search-btn"><span><img src="img/chevron_right_grey.svg" alt=" "></span></button>
+                     </form>
                   </div>
-                  <div class="burger">
+                  <div class="burger" id="burger">
                      <img loading="lazy" src="img/burger.svg" alt=" ">
                   </div>
                </div>
@@ -68,6 +72,52 @@
                      <li class="header_top_info_bottom_list_item hover"><a href="#" class="header_top_info_bottom_list_item_link">Вакансии</a></li>
                      <li class="header_top_info_bottom_list_item hover"><a href="#" class="header_top_info_bottom_list_item_link">Контакты</a></li>
                   </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="mob_menu" id="mob_menu">
+         <div class="mob_header">
+            <div class="mob_logo">
+               <img src="img/logo_footer.svg" alt=" ">
+            </div>
+            <div class="mob_header-tel">
+               <a class="mob_header-tel-link" href="tel:+74922404937">+7 (4922) 40-49-37</a>
+            </div>
+            <mob class="close" id="close">
+               <img src="img/close.svg" alt=" ">
+            </mob>
+         </div>
+         <div class="mob_search">
+            <form class="mob_search-form">
+               <input type="text" name="search" id="search" class="inp_search" placeholder="Поиск">
+            </form>
+         </div>
+         <nav class="mob_nav">
+            <ul class="mob_nav-list">
+               <li class="mob_nav-list-item"><a href="#" class="mob_nav-list-item-link">О нас</a></li>
+               <li class="mob_nav-list-item"><a href="#" class="mob_nav-list-item-link">Продукция</a></li>
+               <li class="mob_nav-list-item"><a href="#" class="mob_nav-list-item-link">Услуги</a></li>
+               <li class="mob_nav-list-item"><a href="#" class="mob_nav-list-item-link">Новости</a></li>
+               <li class="mob_nav-list-item"><a href="#" class="mob_nav-list-item-link">Вакансии</a></li>
+               <li class="mob_nav-list-item"><a href="#" class="mob_nav-list-item-link">Контакты</a></li>
+               <li class="mob_nav-list-item mob_nav-list-item-mess"><a href="#" class="mob_nav-list-item-link">Оставить сообщение</a></li>
+               <li class="mob_nav-list-item mob_nav-list-item-tel"><a href="tel:+74922404937" class="mob_nav-list-item-link mob_nav-list-item-link-phone">+7 (4922) 40-49-37</a></li>
+            </ul>
+         </nav>
+         <div class="mob_bottom">
+            <div class="mob_bottom-soc">
+               <div class="mob_bottom-soc-item">
+                  <a href="#" class="mob_bottom-soc-item-link"><img src="img/mob_f1.svg" alt=" "></a>
+               </div>
+               <div class="mob_bottom-soc-item">
+                  <a href="#" class="mob_bottom-soc-item-link"><img src="img/mob_f2.svg" alt=" "></a>
+               </div>
+               <div class="mob_bottom-soc-item">
+                  <a href="#" class="mob_bottom-soc-item-link"><img src="img/mob_f3.svg" alt=" "></a>
+               </div>
+               <div class="mob_bottom-soc-item">
+                  <a href="#" class="mob_bottom-soc-item-link"><img src="img/mob_f4.svg" alt=" "></a>
                </div>
             </div>
          </div>
@@ -138,7 +188,7 @@
                      <p>Экологичность</p>
                   </div>
                   <div class="about_card_content_text">
-                     <p>Formabox производит упаковку из экологичных материалов</p>
+                     <p>Formabox производит упаковку из&nbsp;экологичных материалов</p>
                   </div>
                </div>
             </div>
@@ -166,7 +216,7 @@
                      <p>12 млн<sup>2</sup></p>
                   </div>
                   <div class="about_card_content_text">
-                     <p>Гофрокартона и гофропродукции в месяц</p>
+                     <p>Гофрокартона и гофропродукции в&nbsp;месяц</p>
                   </div>
                </div>
             </div>
@@ -194,7 +244,7 @@
             <h2>Продукция</h2>
          </div>
          <div class="products_subtitle">
-            <p>В ассортимент нашей продукции входят разные профили гофрокартона в зависимости от количества слоев</p>
+            <p>В ассортимент нашей продукции входят разные профили гофрокартона в&nbsp;зависимости от&nbsp;количества слоев</p>
          </div>
          <div class="products_row2">
             <div class="products_row2_card">
@@ -614,7 +664,7 @@
    </section>
    <!-- ----end techology----- -->
    <!-- ----start service----- -->
-   <section class="service mb">
+   <section class="service">
       <div class="service_wrap wrap">
          <div class="service_title">
             <h2>Услуги</h2>
@@ -776,7 +826,9 @@
          <div class="news_row">
             <div class="news_card">
                <div class="news_card_pic">
-                  <img loading="lazy" src="img/n1.png" alt=" ">
+                  <a href="#">
+                     <img loading="lazy" src="img/n1.png" alt=" ">
+                  </a>
                </div>
                <div class="news_card_content">
                   <div class="news_card_date">
@@ -792,7 +844,9 @@
             </div>
             <div class="news_card">
                <div class="news_card_pic">
-                  <img loading="lazy" src="img/n2.png" alt=" ">
+                  <a href="#">
+                     <img loading="lazy" src="img/n2.png" alt=" ">
+                  </a>
                </div>
                <div class="news_card_content">
                   <div class="news_card_date">
@@ -808,7 +862,9 @@
             </div>
             <div class="news_card">
                <div class="news_card_pic">
-                  <img loading="lazy" src="img/n3.png" alt=" ">
+                  <a href="#">
+                     <img loading="lazy" src="img/n1.png" alt=" ">
+                  </a>
                </div>
                <div class="news_card_content">
                   <div class="news_card_date">
